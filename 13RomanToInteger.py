@@ -38,6 +38,7 @@ class Solution:
 
     def romanToInt(self, s):
         c=[]
+        tot=0
         
         for j in s:
         	if j=='M':
@@ -55,8 +56,6 @@ class Solution:
         	elif j=='I':
         		c.append(1)
 
-        tot=0
-        
         for i in range(len(c)-1):
         	if c[i]<c[i+1]:
         		c[i]=-1*c[i]
